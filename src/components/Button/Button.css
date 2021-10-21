@@ -1,0 +1,19 @@
+.default {
+  background-color: aqua;
+}
+
+.clicked {
+  background-color: blueviolet;
+}
+
+.withPadding {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: #cc2222;
+  font-weight: 700;
+}
+
+.bigFont {
+  font-size: 72px;
+}

@@ -1,13 +1,23 @@
-import logo from "./logo.svg"
-import "./App.css"
+import './App.css';
+
+import React from 'react';
+
+import { CustomButton } from 'components/Button/Button';
+import { Item } from 'components/item/Item';
+
+import logo from './logo.svg';
 
 function App() {
+  const [loading, setLoading] = React.useState(true)
+  const toggle = () => {
+    setLoading((prev) => !prev)
+  }
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Palko <code>src/App.js</code> je velkej programátor!!!.
+        <p onClick={() => toggle()}>
+          Palko <code>src/App.js</code> je velkej programátor!!! :-).
         </p>
         <a
           className="App-link"
@@ -17,6 +27,9 @@ function App() {
         >
           Learn React
         </a>
+        {loading && <p>loading...</p>}
+        <Item title="Fourth Item" />
+        <CustomButton>First Button</CustomButton>
       </header>
     </div>
   )
