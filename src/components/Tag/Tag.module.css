@@ -1,0 +1,12 @@
+.tag {
+  border: 1px solid #22cc22;
+  color: #cc22cc;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.tag div {
+  font-size: 8px;
+  border: 1px solid #ccc;
+}

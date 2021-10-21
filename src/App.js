@@ -4,6 +4,8 @@ import React from 'react';
 
 import { CustomButton } from 'components/Button/Button';
 import { Item } from 'components/item/Item';
+import { Navbar } from 'components/Navbar';
+import { Tag } from 'components/Tag/Tag';
 
 import logo from './logo.svg';
 
@@ -30,6 +32,8 @@ function App() {
         {loading && <p>loading...</p>}
         <Item title="Fourth Item" />
         <CustomButton>First Button</CustomButton>
+        <Tag>This is a Tag</Tag>
+        <Navbar />
       </header>
     </div>
   )
