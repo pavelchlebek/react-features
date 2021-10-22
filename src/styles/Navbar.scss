@@ -1,7 +1,22 @@
 @import "../variables/Variables.scss";
 
 .navbar {
-  width: 80%;
+  width: 90%;
   height: 80px;
-  background-color: $blackColor;
+  background-color: $maroonColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  color: $whiteColor;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: $titleFont;
+  margin: 10px;
+}
+
+.navbar .links {
+  margin-right: 50px;
 }
