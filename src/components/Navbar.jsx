@@ -6,9 +6,9 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="links">
-        <a href="/home">Home</a>
-        <a href="/about">About</a>
-        <a href="/profile">Profile</a>
+        <a href="/">First</a>
+        <a href="/bootstrap">Bootstrap</a>
+        <a href="/bootstrap-layout">Layout</a>
         <a href="/contacts">Contacts</a>
       </div>
     </div>

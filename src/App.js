@@ -5,6 +5,8 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
+import { BootstrapLayout } from 'screens/BootstrapLayout';
+import { BootstrapScreen } from 'screens/BootstrapScreen';
 import FirstScreen from 'screens/FirstScreen';
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={FirstScreen} />
+        <Route path="/bootstrap" component={BootstrapScreen} />
+        <Route path="/bootstrap-layout" component={BootstrapLayout} />
       </Switch>
     </BrowserRouter>
   )

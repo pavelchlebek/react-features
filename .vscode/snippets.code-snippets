@@ -296,7 +296,7 @@
     "description": "React functional component without children"
   },
   "react functional component with optional children": {
-    "scope": "typescriptreact,javascriptreact",
+    "scope": "typescriptreact",
     "prefix": "fcwoptchildren",
     "body": [
       "import * as React from 'react'",
@@ -306,6 +306,23 @@
       "}",
       "",
       "export const ${1:$TM_FILENAME_BASE}: React.FC<TProps> = ({ children, ${3:props} }) => {",
+      "\t$5",
+      "\t",
+      "\treturn (",
+      "\t\t$4",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React functional component with optional children"
+  },
+  "react functional component javascript react": {
+    "scope": "javascriptreact",
+    "prefix": "fcjs",
+    "body": [
+      "import * as React from 'react'",
+      "",
+      "export const $TM_FILENAME_BASE = ({ props }) => {",
       "\t$5",
       "\t",
       "\treturn (",

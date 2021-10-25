@@ -15,6 +15,10 @@
   text-decoration: none;
   font-family: $titleFont;
   margin: 10px;
+  padding: 15px;
+  &:hover {
+    background-color: #2244cc;
+  }
 }
 
 .navbar .links {
