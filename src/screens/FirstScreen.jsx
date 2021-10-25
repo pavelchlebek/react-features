@@ -38,7 +38,11 @@ function FirstScreen() {
         <Navbar />
         <Button style={{ marginBottom: "10px" }}>Bootstrap Button</Button>
         <button className="btn btn-warning">Second Button</button>
-        <p className="btn btn-danger">Palko je boss!!!</p>
+        <div style={{ width: "70%", display: "flex" }}>
+          <p style={{ flex: 1 }} className="btn btn-danger">
+            Palko je boss!!!
+          </p>
+        </div>
       </header>
     </div>
   )

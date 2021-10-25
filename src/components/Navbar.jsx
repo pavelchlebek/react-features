@@ -9,7 +9,7 @@ export const Navbar = () => {
         <a href="/">First</a>
         <a href="/bootstrap">Bootstrap</a>
         <a href="/bootstrap-layout">Layout</a>
-        <a href="/contacts">Contacts</a>
+        <a href="/refsScreen">Refs</a>
       </div>
     </div>
   )
