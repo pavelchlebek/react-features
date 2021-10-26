@@ -2,25 +2,24 @@
 
 .navbar {
   width: 90%;
-  height: 80px;
+  // height: 80px;
   background-color: $maroonColor;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .navbar a {
   color: $whiteColor;
-  font-size: 25px;
+  font-size: 18px;
   text-decoration: none;
   font-family: $titleFont;
-  margin: 10px;
-  padding: 15px;
+  margin: 0px;
+  padding: 10px;
   &:hover {
     background-color: #2244cc;
   }
-}
-
-.navbar .links {
-  margin-right: 50px;
 }
