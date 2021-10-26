@@ -13,6 +13,7 @@ import FirstScreen from 'screens/FirstScreen';
 import { RefsScreen } from 'screens/RefsScreen';
 import { RefsScreen2 } from 'screens/RefsScreen2';
 import { UseCallback } from 'screens/UseCallback';
+import { UseMemo } from 'screens/UseMemo';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/effect" component={EffectScreen} />
         <Route path="/effectWindow" component={EffectWindowScreen} />
         <Route path="/callback" component={UseCallback} />
+        <Route path="/memo" component={UseMemo} />
       </Switch>
     </BrowserRouter>
   )

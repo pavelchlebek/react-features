@@ -13,6 +13,7 @@ export const Navbar = () => {
       <a href="/effect">useEffect</a>
       <a href="/effectWindow">EffectWindow</a>
       <a href="/callback">UseCallback</a>
+      <a href="/memo">UseMemo</a>
     </div>
   )
 }
