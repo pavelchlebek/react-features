@@ -7,6 +7,7 @@ import { CustomButton } from 'components/Button/Button';
 import { Item } from 'components/item/Item';
 import { Navbar } from 'components/Navbar';
 import { Tag } from 'components/Tag/Tag';
+import { useNumber } from 'CounterProvider';
 import Button from 'react-bootstrap/Button';
 
 import logo from '../logo.svg';
@@ -16,6 +17,9 @@ function FirstScreen() {
   const toggle = () => {
     setLoading((prev) => !prev)
   }
+
+  const number = useNumber()
+
   return (
     <div className="App">
       <header className="App-header">
@@ -43,6 +47,9 @@ function FirstScreen() {
             Palko je boss!!!
           </p>
         </div>
+        <div>{number.number}</div>
+        <button onClick={() => number.increment()}>Increment</button>
+        <button onClick={number.decrement}>Decrement</button>
       </header>
     </div>
   )

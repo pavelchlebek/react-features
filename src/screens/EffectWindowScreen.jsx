@@ -10,7 +10,10 @@ export const EffectWindowScreen = () => {
   React.useEffect(() => {
     window.addEventListener("resize", handleResize)
 
-    return window.removeEventListener("resize", handleResize)
+    // return window.removeEventListener("resize", handleResize)
+    return () => {
+      console.log("effect cleanup")
+    }
   }, [])
 
   return <div style={{ margin: "120px" }}>{windowWidth}</div>

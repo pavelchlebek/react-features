@@ -2,11 +2,15 @@ import '../styles/Navbar.css';
 
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 export const Navbar = () => {
   return (
     <div className="navbar">
-      <a href="/">First</a>
-      <a href="/bootstrap">Bootstrap</a>
+      <Link to="/">First</Link>
+      {/* <a href="/">First</a>*/}
+      <Link to="/bootstrap">Bootstrap</Link>
+      {/* <a href="/bootstrap">Bootstrap</a> */}
       <a href="/bootstrap-layout">Layout</a>
       <a href="/refsScreen">Refs</a>
       <a href="/refs2">Refs2</a>

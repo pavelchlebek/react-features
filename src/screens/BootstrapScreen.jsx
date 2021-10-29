@@ -1,12 +1,14 @@
 import * as React from 'react';
 
+import { useNumber } from 'CounterProvider';
 import {
   Alert,
   Breadcrumb,
   Button,
 } from 'react-bootstrap';
 
-export const BootstrapScreen = ({ props }) => {
+export const BootstrapScreen = () => {
+  const number = useNumber()
   return (
     <div
       style={{
@@ -34,6 +36,9 @@ export const BootstrapScreen = ({ props }) => {
         <Breadcrumb.Item>Test 2</Breadcrumb.Item>
         <Breadcrumb.Item active>Test 3</Breadcrumb.Item>
       </Breadcrumb>
+      <div>{number.number}</div>
+      <button onClick={number.increment}>Increment</button>
+      <button onClick={number.decrement}>Decrement</button>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { CounterProvider } from 'CounterProvider';
 import {
   BrowserRouter,
   Route,
@@ -18,17 +19,19 @@ import { UseMemo } from 'screens/UseMemo';
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={FirstScreen} />
-        <Route path="/bootstrap" component={BootstrapScreen} />
-        <Route path="/bootstrap-layout" component={BootstrapLayout} />
-        <Route path="/refsScreen" component={RefsScreen} />
-        <Route path="/refs2" component={RefsScreen2} />
-        <Route path="/effect" component={EffectScreen} />
-        <Route path="/effectWindow" component={EffectWindowScreen} />
-        <Route path="/callback" component={UseCallback} />
-        <Route path="/memo" component={UseMemo} />
-      </Switch>
+      <CounterProvider>
+        <Switch>
+          <Route path="/" exact component={FirstScreen} />
+          <Route path="/bootstrap" component={BootstrapScreen} />
+          <Route path="/bootstrap-layout" component={BootstrapLayout} />
+          <Route path="/refsScreen" component={RefsScreen} />
+          <Route path="/refs2" component={RefsScreen2} />
+          <Route path="/effect" component={EffectScreen} />
+          <Route path="/effectWindow" component={EffectWindowScreen} />
+          <Route path="/callback" component={UseCallback} />
+          <Route path="/memo" component={UseMemo} />
+        </Switch>
+      </CounterProvider>
     </BrowserRouter>
   )
 }
