@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import { BootstrapLayout } from 'screens/BootstrapLayout';
 import { BootstrapScreen } from 'screens/BootstrapScreen';
+import { CustomHooks } from 'screens/CustomHooks';
 import { EffectScreen } from 'screens/EffectScreen';
 import { EffectWindowScreen } from 'screens/EffectWindowScreen';
 import FirstScreen from 'screens/FirstScreen';
@@ -15,6 +16,7 @@ import { RefsScreen } from 'screens/RefsScreen';
 import { RefsScreen2 } from 'screens/RefsScreen2';
 import { UseCallback } from 'screens/UseCallback';
 import { UseMemo } from 'screens/UseMemo';
+import { WDSCustomHooks } from 'screens/WDSCustomHooks';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path="/effectWindow" component={EffectWindowScreen} />
           <Route path="/callback" component={UseCallback} />
           <Route path="/memo" component={UseMemo} />
+          <Route path="/customHooks" component={CustomHooks} />
+          <Route path="/wdsCustomHooks" component={WDSCustomHooks} />
         </Switch>
       </CounterProvider>
     </BrowserRouter>
