@@ -16,6 +16,7 @@ import { RefsScreen } from 'screens/RefsScreen';
 import { RefsScreen2 } from 'screens/RefsScreen2';
 import { UseCallback } from 'screens/UseCallback';
 import { UseMemo } from 'screens/UseMemo';
+import { UseReducer } from 'screens/UseReducer';
 import { WDSCustomHooks } from 'screens/WDSCustomHooks';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/memo" component={UseMemo} />
           <Route path="/customHooks" component={CustomHooks} />
           <Route path="/wdsCustomHooks" component={WDSCustomHooks} />
+          <Route path="/useReducer" component={UseReducer} />
         </Switch>
       </CounterProvider>
     </BrowserRouter>

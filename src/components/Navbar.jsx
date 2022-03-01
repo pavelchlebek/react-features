@@ -20,6 +20,7 @@ export const Navbar = () => {
       <a href="/memo">UseMemo</a>
       <Link to="/customHooks">Custom Hooks</Link>
       <Link to="/wdsCustomHooks">WDS Custom Hooks</Link>
+      <Link to="/useReducer">useReducer</Link>
     </div>
   )
 }
