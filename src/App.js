@@ -14,6 +14,7 @@ import { EffectWindowScreen } from 'screens/EffectWindowScreen';
 import FirstScreen from 'screens/FirstScreen';
 import { RefsScreen } from 'screens/RefsScreen';
 import { RefsScreen2 } from 'screens/RefsScreen2';
+import { TodosUseReducer } from 'screens/TodosUseReducer';
 import { UseCallback } from 'screens/UseCallback';
 import { UseMemo } from 'screens/UseMemo';
 import { UseReducer } from 'screens/UseReducer';
@@ -36,6 +37,7 @@ function App() {
           <Route path="/customHooks" component={CustomHooks} />
           <Route path="/wdsCustomHooks" component={WDSCustomHooks} />
           <Route path="/useReducer" component={UseReducer} />
+          <Route path="/todosUseReducer" component={TodosUseReducer} />
         </Switch>
       </CounterProvider>
     </BrowserRouter>
