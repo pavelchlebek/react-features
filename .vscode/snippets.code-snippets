@@ -320,9 +320,9 @@
     "scope": "javascriptreact",
     "prefix": "fcjs",
     "body": [
-      "import * as React from 'react'",
+      "import React from 'react'",
       "",
-      "export const $TM_FILENAME_BASE = ({ props }) => {",
+      "export const $TM_FILENAME_BASE = () => {",
       "\t$5",
       "\t",
       "\treturn (",

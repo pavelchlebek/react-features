@@ -1,0 +1,40 @@
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+
+.content {
+  position: relative;
+}
+
+.div {
+  font-size: 48px;
+  letter-spacing: 8px;
+  color: #4267b2;
+  text-decoration: underline;
+  /* line-height: 100px; */
+  background-color: antiquewhite;
+  border-radius: 8px;
+  padding: 16px;
+  /* position: relative; */
+}
+
+.box {
+  position: absolute;
+  left: 70px;
+  top: -50px;
+  display: flex;
+  color: black;
+  /* border: 1px solid #ccc; */
+  display: none;
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+  font-size: 32px;
+}
+
+.vis {
+  display: block;
+}

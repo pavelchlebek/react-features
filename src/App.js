@@ -8,12 +8,14 @@ import {
 } from 'react-router-dom';
 import { BootstrapLayout } from 'screens/BootstrapLayout';
 import { BootstrapScreen } from 'screens/BootstrapScreen';
+import { Calculator } from 'screens/Calculator/Calculator';
 import { CustomHooks } from 'screens/CustomHooks';
 import { EffectScreen } from 'screens/EffectScreen';
 import { EffectWindowScreen } from 'screens/EffectWindowScreen';
 import FirstScreen from 'screens/FirstScreen';
 import { RefsScreen } from 'screens/RefsScreen';
 import { RefsScreen2 } from 'screens/RefsScreen2';
+import { Sentence } from 'screens/Sentence/Sentence';
 import { TodosUseReducer } from 'screens/TodosUseReducer';
 import { UseCallback } from 'screens/UseCallback';
 import { UseMemo } from 'screens/UseMemo';
@@ -38,6 +40,8 @@ function App() {
           <Route path="/wdsCustomHooks" component={WDSCustomHooks} />
           <Route path="/useReducer" component={UseReducer} />
           <Route path="/todosUseReducer" component={TodosUseReducer} />
+          <Route path="/Sentence" component={Sentence} />
+          <Route path="/calculator" component={Calculator} />
         </Switch>
       </CounterProvider>
     </BrowserRouter>

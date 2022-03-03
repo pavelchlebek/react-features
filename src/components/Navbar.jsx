@@ -22,6 +22,8 @@ export const Navbar = () => {
       <Link to="/wdsCustomHooks">WDS Custom Hooks</Link>
       <Link to="/useReducer">useReducer</Link>
       <Link to="/todosUseReducer">TodosUseReducer</Link>
+      <Link to="/sentence">Sentence</Link>
+      <Link to="/calculator">Calculator</Link>
     </div>
   )
 }
