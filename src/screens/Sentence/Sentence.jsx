@@ -1,8 +1,40 @@
-import './styles.css';
+import "./styles.css"
 
-import React from 'react';
+import React from "react"
 
 const sentence = "Palko je bůh!!!"
+
+const p = new Promise((resolve, reject) => {
+  const a = Math.floor(Math.random() * 2)
+  if (a == 1) {
+    resolve(a)
+  } else {
+    reject(a)
+  }
+})
+
+p.then((message) => {
+  console.log("This is in the then " + message)
+}).catch((message) => {
+  console.log("This is in the catch " + message)
+})
+
+// for (let i = 0; i < 100; i++) {
+//   const p = new Promise((resolve, reject) => {
+//     const a = Math.floor(Math.random() * 10)
+//     if (a == 3) {
+//       resolve("success")
+//     } else {
+//       reject("failed")
+//     }
+//   })
+
+//   p.then((message) => {
+//     console.log(message)
+//   }).catch((message) => {
+//     console.log(message)
+//   })
+// }
 
 export const Sentence = () => {
   const [content, setContent] = React.useState("")
@@ -20,14 +52,14 @@ export const Sentence = () => {
     }, 300)
   }, [iteration])
 
-  console.log("mouseOver: ", boxVisible)
+  // console.log("mouseOver: ", boxVisible)
 
   return (
     <div className="content">
       <div
-        onMouseOver={() => setBoxVisible(true)}
-        onMouseLeave={() => setBoxVisible(false)}
-        className="div"
+      // onMouseOver={() => setBoxVisible(true)}
+      // onMouseLeave={() => setBoxVisible(false)}
+      // className="div"
       >
         {content}
       </div>
