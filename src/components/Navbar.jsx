@@ -1,8 +1,8 @@
-import '../styles/Navbar.css';
+import "../styles/Navbar.css"
 
-import React from 'react';
+import React from "react"
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom"
 
 export const Navbar = () => {
   return (
@@ -24,6 +24,7 @@ export const Navbar = () => {
       <Link to="/todosUseReducer">TodosUseReducer</Link>
       <Link to="/sentence">Sentence</Link>
       <Link to="/calculator">Calculator</Link>
+      <Link to="/reducer">Reducer</Link>
     </div>
   )
 }

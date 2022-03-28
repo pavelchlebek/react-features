@@ -1,26 +1,23 @@
-import React from 'react';
+import React from "react"
 
-import { CounterProvider } from 'CounterProvider';
-import {
-  BrowserRouter,
-  Route,
-  Switch,
-} from 'react-router-dom';
-import { BootstrapLayout } from 'screens/BootstrapLayout';
-import { BootstrapScreen } from 'screens/BootstrapScreen';
-import { Calculator } from 'screens/Calculator/Calculator';
-import { CustomHooks } from 'screens/CustomHooks';
-import { EffectScreen } from 'screens/EffectScreen';
-import { EffectWindowScreen } from 'screens/EffectWindowScreen';
-import FirstScreen from 'screens/FirstScreen';
-import { RefsScreen } from 'screens/RefsScreen';
-import { RefsScreen2 } from 'screens/RefsScreen2';
-import { Sentence } from 'screens/Sentence/Sentence';
-import { TodosUseReducer } from 'screens/TodosUseReducer';
-import { UseCallback } from 'screens/UseCallback';
-import { UseMemo } from 'screens/UseMemo';
-import { UseReducer } from 'screens/UseReducer';
-import { WDSCustomHooks } from 'screens/WDSCustomHooks';
+import { CounterProvider } from "CounterProvider"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { BootstrapLayout } from "screens/BootstrapLayout"
+import { BootstrapScreen } from "screens/BootstrapScreen"
+import { Calculator } from "screens/Calculator/Calculator"
+import { CustomHooks } from "screens/CustomHooks"
+import { EffectScreen } from "screens/EffectScreen"
+import { EffectWindowScreen } from "screens/EffectWindowScreen"
+import FirstScreen from "screens/FirstScreen"
+import { ReducerScreen } from "screens/Reducer/ReducerScreen"
+import { RefsScreen } from "screens/RefsScreen"
+import { RefsScreen2 } from "screens/RefsScreen2"
+import { Sentence } from "screens/Sentence/Sentence"
+import { TodosUseReducer } from "screens/TodosUseReducer"
+import { UseCallback } from "screens/UseCallback"
+import { UseMemo } from "screens/UseMemo"
+import { UseReducer } from "screens/UseReducer"
+import { WDSCustomHooks } from "screens/WDSCustomHooks"
 
 function App() {
   return (
@@ -42,6 +39,7 @@ function App() {
           <Route path="/todosUseReducer" component={TodosUseReducer} />
           <Route path="/Sentence" component={Sentence} />
           <Route path="/calculator" component={Calculator} />
+          <Route path="/reducer" component={ReducerScreen} />
         </Switch>
       </CounterProvider>
     </BrowserRouter>
