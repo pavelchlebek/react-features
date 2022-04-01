@@ -2,6 +2,7 @@ import React from "react"
 
 import { CounterProvider } from "CounterProvider"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { ArrayMethodsScreen } from "screens/ArrayMethdosScreen"
 import { BootstrapLayout } from "screens/BootstrapLayout"
 import { BootstrapScreen } from "screens/BootstrapScreen"
 import { Calculator } from "screens/Calculator/Calculator"
@@ -40,6 +41,7 @@ function App() {
           <Route path="/Sentence" component={Sentence} />
           <Route path="/calculator" component={Calculator} />
           <Route path="/reducer" component={ReducerScreen} />
+          <Route path="/arrayMethods" component={ArrayMethodsScreen} />
         </Switch>
       </CounterProvider>
     </BrowserRouter>

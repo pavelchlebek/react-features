@@ -6,7 +6,7 @@ const sentence = "Palko je bůh!!!"
 
 const p = new Promise((resolve, reject) => {
   const a = Math.floor(Math.random() * 2)
-  if (a == 1) {
+  if (a === 1) {
     resolve(a)
   } else {
     reject(a)
