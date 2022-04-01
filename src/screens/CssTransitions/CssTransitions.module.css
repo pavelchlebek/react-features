@@ -1,0 +1,56 @@
+.parent {
+  width: 400px;
+  height: 400px;
+  background-color: hsl(200, 70%, 30%);
+}
+
+.child {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+  border-radius: 50%;
+  /* transition: transform 1s ease-in; */
+  animation: left-to-right 1s ease-in infinite forwards;
+}
+
+.parent:hover .child {
+  animation-play-state: paused;
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  75% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* .animated {
+  animation-name: moving;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes moving {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+} */

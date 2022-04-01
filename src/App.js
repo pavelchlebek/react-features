@@ -6,6 +6,7 @@ import { ArrayMethodsScreen } from "screens/ArrayMethdosScreen"
 import { BootstrapLayout } from "screens/BootstrapLayout"
 import { BootstrapScreen } from "screens/BootstrapScreen"
 import { Calculator } from "screens/Calculator/Calculator"
+import { CssTransitions } from "screens/CssTransitions/CssTransitions"
 import { CustomHooks } from "screens/CustomHooks"
 import { EffectScreen } from "screens/EffectScreen"
 import { EffectWindowScreen } from "screens/EffectWindowScreen"
@@ -42,6 +43,7 @@ function App() {
           <Route path="/calculator" component={Calculator} />
           <Route path="/reducer" component={ReducerScreen} />
           <Route path="/arrayMethods" component={ArrayMethodsScreen} />
+          <Route path="/cssTransitions" component={CssTransitions} />
         </Switch>
       </CounterProvider>
     </BrowserRouter>

@@ -55,6 +55,20 @@ const result = calculateControl(10, 13, (res) => {
 
 console.log("it is here: ", state)
 
+/* ------------------------------------------myForEach--------------------------------------------- */
+
+const myForEach = (arr, operation) => {
+  for (let i = 0; i < arr.length; i++) {
+    operation(arr[i])
+  }
+}
+
+const newNumbers = []
+
+myForEach([1, 8, 13, 27], (item) => newNumbers.push(item * 13))
+
+console.log("newNumbers: ", newNumbers)
+
 export const ArrayMethodsScreen = () => {
   return <div>Palko je nejvic!!!</div>
 }
